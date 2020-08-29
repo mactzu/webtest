@@ -2,7 +2,7 @@
 // Incoming data is internally referred to as incomingData
 d3.json("data/data.json").then((incomingData) => {
   function filterMovieRatings(movie) {
-    return movie.imdbRating > 5;
+    return movie.imdbRating > 3;
   }
 
   // Use filter() to pass the function as its argument
